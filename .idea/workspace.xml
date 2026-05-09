@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8deb08a-7777-4e0b-8382-450ca4f030ae" name="Changes" comment="" />
+    <list default="true" id="c8deb08a-7777-4e0b-8382-450ca4f030ae" name="Changes" comment="Feat: okay version">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloaking-adx-new.php" beforeDir="false" afterPath="$PROJECT_DIR$/cloaking-adx-new.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,8 +24,25 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "applandsys"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/applandsys/cloacking-plugin.git",
+    "accountId": "524e3831-ae17-407e-a832-0888e7d81a5a"
+  }
+}]]></component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
@@ -46,7 +66,7 @@
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "setting-menu",
     "ignore.virus.scanning.warn.message": "true",
     "junie.onboarding.icon.badge.shown": "true",
     "last_opened_file_path": "C:/laragon/www/wordpress/wp-content/plugins/cloaking-adx-new",
@@ -94,11 +114,24 @@
       <workItem from="1777974026939" duration="448000" />
       <workItem from="1778002005253" duration="614000" />
       <workItem from="1778083470915" duration="2026000" />
-      <workItem from="1778254077625" duration="1592000" />
+      <workItem from="1778254077625" duration="3432000" />
     </task>
+    <task id="LOCAL-00001" summary="Feat: inital version">
+      <option name="closed" value="true" />
+      <created>1778255736032</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1778255736032</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Feat: inital version" />
+    <option name="LAST_COMMIT_MESSAGE" value="Feat: inital version" />
   </component>
 </project>

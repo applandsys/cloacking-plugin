@@ -9,11 +9,26 @@
 if (!defined('ABSPATH')) exit;
 
 
+// Add settings page under Plugins -> Settings
 add_action('admin_menu', 'newpluign_menu');
 function newpluign_menu() {
-    add_menu_page('Cloaking AdX', 'Cloaking AdX', 'manage_options', 'newpluign-settings', 'newpluign_admin_page', 'dashicons-shield', 90);
+    add_options_page(
+            'Cloaking AdX',
+            'Cloaking AdX',
+            'manage_options',
+            'newpluign-settings',
+            'newpluign_admin_page'
+    );
 }
 
+// Add direct "Settings" link in plugins page
+add_filter('plugin_action_links_' . plugin_basename(__FILE__), 'newpluign_settings_link');
+
+function newpluign_settings_link($links) {
+    $settings_link = '<a href="admin.php?page=newpluign-settings">Settings</a>';
+    array_unshift($links, $settings_link);
+    return $links;
+}
 add_action('admin_init', 'newpluign_register_settings');
 
 // newpluign_register_settings();
@@ -315,13 +330,29 @@ function newpluign_should_show() {
 }
 
 function newpluign_get_target_template() {
+
     if(isset($_GET['tmpl'])) {
         $tmpl_id = intval($_GET['tmpl']);
-        if($tmpl_id >= 1 && $tmpl_id <= 7) {
-            return plugin_dir_path(__FILE__) . 'cloak-template-' . $tmpl_id . '.php';
+
+        // Allow 1-10 templates
+        if($tmpl_id >= 1 && $tmpl_id <= 10) {
+
+            $template_file = plugin_dir_path(__FILE__) . 'cloak-template-' . $tmpl_id . '.php';
+
+            // Check file exists
+            if(file_exists($template_file)) {
+                return $template_file;
+            }
         }
     }
-    $templates = ['cloak-template-1.php', 'cloak-template-2.php', 'cloak-template-3.php', 'cloak-template-4.php', 'cloak-template-5.php', 'cloak-template-6.php', 'cloak-template-7.php'];
+
+    // Random template 1-10
+    $templates = [];
+
+    for($i = 1; $i <= 10; $i++) {
+        $templates[] = 'cloak-template-' . $i . '.php';
+    }
+
     return plugin_dir_path(__FILE__) . $templates[array_rand($templates)];
 }
 
