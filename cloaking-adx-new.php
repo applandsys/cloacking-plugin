@@ -150,7 +150,7 @@ function newpluign_admin_page() {
     <div class="adx-wrap">
         <div class="adx-pro-banner">
             <h1 class="adx-title-main">Cloaking AdX</h1>
-            <a href="https://www.facebook.com/imranV2.0" target="_blank" class="adx-dev-badge blink-anim">Developed by Imtiaz</a>
+            <a href="https://www.facebook.com/profile.php?id=100001094229091" target="_blank" class="adx-dev-badge blink-anim">Developed by Imtiaz</a>
         </div>
 
         <form method="post" action="options.php">
